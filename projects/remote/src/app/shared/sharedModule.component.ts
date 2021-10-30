@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-mfefeature',
+  selector: 'app-shared-component',
   templateUrl: './sharedModule.component.html',
   styleUrls: ['./sharedModule.component.css']
 })

@@ -5,7 +5,7 @@ import { SharedComponent } from './sharedModule.component';
 const routes: Routes = [
   {
     path: '',
-    component: SharedComponent
+    component: SharedComponent,
   }
 ];
 
