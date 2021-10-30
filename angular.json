@@ -190,7 +190,7 @@
           "options": {
             "browserTarget": "remote:build",
             "extraWebpackConfig": "projects/remote/webpack.config.js",
-            "port": 50000
+            "port": 4300
           },
           "configurations": {
             "production": {

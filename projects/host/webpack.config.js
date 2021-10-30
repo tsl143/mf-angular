@@ -27,7 +27,7 @@ module.exports = {
         
         // For hosts (please adjust)
         remotes: {
-            "remote": "remote@http://localhost:50000/remoteEntry.js",
+            "remote": "remote@http://localhost:4300/remoteEntry.js",
 
         },
 
