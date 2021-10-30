@@ -4,14 +4,14 @@ import { HomeComponent } from 'projects/host/src/app/home/home.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent,
     pathMatch: 'full',
   },
   {
-    path: 'mfe1',
+    path: 'shared',
     loadChildren: () => 
-      import("./mfefeature/mfefeature.module").then((m) => m.SharedModule),
+      import("./shared/sharedModule.module").then((m) => m.SharedModule),
   },
 ];
 

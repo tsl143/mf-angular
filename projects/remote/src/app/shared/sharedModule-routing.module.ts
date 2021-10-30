@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MfefeatureComponent } from './mfefeature.component';
+import { SharedComponent } from './sharedModule.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MfefeatureComponent
+    component: SharedComponent
   }
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class MfefeatureRoutingModule { }
+export class SharedRoutingModule { }

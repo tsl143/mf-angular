@@ -22,7 +22,7 @@ module.exports = {
         name: "remote",
         filename: "remoteEntry.js",
         exposes: {
-            './SharedModule': './projects/remote/src/app/mfefeature/mfefeature.module.ts',
+            './SharedModule': './projects/remote/src/app/shared/sharedModule.module.ts',
         },        
         
         // For hosts (please adjust)
