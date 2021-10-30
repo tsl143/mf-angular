@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { SharedComponent } from 'remote/SharedModule';
 
 const routes: Routes = [
   {
@@ -10,10 +11,7 @@ const routes: Routes = [
   },
   {
     path: 'remote',
-    loadChildren: () => 
-      import('remote/SharedModule').then((m) => {
-        return m.SharedModule;
-      }),
+    component: SharedComponent,
   },
 ];
 

@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SharedComponent } from './shared/sharedModule.component';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => 
-      import("./shared/sharedModule.module").then((m) => m.SharedModule),
+    component: SharedComponent
   },
 ];
 

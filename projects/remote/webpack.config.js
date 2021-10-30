@@ -17,26 +17,15 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      
-        // For remotes (please adjust)
         name: "remote",
         filename: "remoteEntry.js",
         exposes: {
-            './SharedModule': './projects/remote/src/app/shared/sharedModule.module.ts',
+            './SharedModule': './projects/remote/src/app/shared/sharedModule.component.ts',
         },        
-        
-        // For hosts (please adjust)
-        // remotes: {
-        //     "host": "host@http://localhost:4200/remoteEntry.js",
-
-        // },
-
         shared: {
           "@angular/core": { singleton: true, strictVersion: true }, 
           "@angular/common": { singleton: true, strictVersion: true }, 
           "@angular/router": { singleton: true, strictVersion: true },
-
-          ...sharedMappings.getDescriptors()
         }
         
     }),

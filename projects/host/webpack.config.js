@@ -12,31 +12,18 @@ module.exports = {
     uniqueName: "host"
   },
   optimization: {
-    // Only needed to bypass a temporary bug
     runtimeChunk: false
   },
   plugins: [
     new ModuleFederationPlugin({
-      
-        // For remotes (please adjust)
-        // name: "host",
-        // filename: "remoteEntry.js",
-        // exposes: {
-        //     './Component': './projects/host/src/app/app.component.ts',
-        // },        
-        
-        // For hosts (please adjust)
         remotes: {
             "remote": "remote@http://localhost:4300/remoteEntry.js",
 
         },
-
         shared: {
           "@angular/core": { singleton: true, strictVersion: true }, 
           "@angular/common": { singleton: true, strictVersion: true }, 
           "@angular/router": { singleton: true, strictVersion: true },
-
-          ...sharedMappings.getDescriptors()
         }
         
     }),
