@@ -12,6 +12,7 @@ const routes: Routes = [
   {
     path: 'remote',
     component: SharedComponent,
+    data: { from: ' Host' }
   },
 ];
 
