@@ -11,7 +11,7 @@ const routes: Routes = [
   {
     path: 'mfe1',
     loadChildren: () => 
-      import("./mfefeature/mfefeature.module").then((m) => m.MfefeatureModule),
+      import("./mfefeature/mfefeature.module").then((m) => m.SharedModule),
   },
 ];
 

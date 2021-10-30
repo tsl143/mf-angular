@@ -13,4 +13,4 @@ import { MfefeatureComponent } from './mfefeature.component';
     MfefeatureRoutingModule
   ]
 })
-export class MfefeatureModule { }
+export class SharedModule { }

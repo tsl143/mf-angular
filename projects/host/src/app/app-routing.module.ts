@@ -9,10 +9,10 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'mfe1',
+    path: 'remote',
     loadChildren: () => 
-      import('mfe1/MfefeatureModule').then((m) => {
-        return m.MfefeatureModule;
+      import('remote/SharedModule').then((m) => {
+        return m.SharedModule;
       }),
   },
 ];

@@ -9,7 +9,7 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: "mfe1"
+    uniqueName: "remote"
   },
   optimization: {
     // Only needed to bypass a temporary bug
@@ -19,10 +19,10 @@ module.exports = {
     new ModuleFederationPlugin({
       
         // For remotes (please adjust)
-        name: "mfe1",
-        filename: "mfe1remoteEntry.js",
+        name: "remote",
+        filename: "remoteEntry.js",
         exposes: {
-            './MfefeatureModule': './projects/mfe1/src/app/mfefeature/mfefeature.module.ts',
+            './SharedModule': './projects/remote/src/app/mfefeature/mfefeature.module.ts',
         },        
         
         // For hosts (please adjust)
